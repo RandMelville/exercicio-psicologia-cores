@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Definindo o conjunto de caracteres e a visualização adaptativa para dispositivos móveis -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título da página que aparece na aba do navegador -->
+    <title>Lista de Tarefas + Mudança de Cor</title>
+    
+    <!-- Link para o arquivo CSS externo, que define o estilo da página -->
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <!-- Container principal que envolve a lista de tarefas -->
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+        
+        <!-- Campo de entrada onde o usuário digita a tarefa -->
+        <input type="text" id="taskInput" placeholder="Digite uma tarefa">
+        
+        <!-- Botão para adicionar a tarefa à lista -->
+        <button id="addTaskBtn">Adicionar</button>
+        
+        <!-- Lista não ordenada onde as tarefas serão exibidas -->
+        <ul id="taskList"></ul>
+    </div>
+
+    <!-- Seção para alteração da cor de um texto -->
+    <div class="color-change">
+        <!-- Parágrafo que irá mudar de cor quando o botão for pressionado -->
+        <p id="text">Clique no botão para mudar minha cor!</p>
+        
+        <!-- Botão que aciona a mudança de cor do texto -->
+        <button id="colorBtn">Mudar Cor</button>
+    </div>
+
+    <!-- Inclusão do arquivo JavaScript que contém a lógica para interações na página -->
+    <script src="main2.js"></script>
+</body>
+</html>

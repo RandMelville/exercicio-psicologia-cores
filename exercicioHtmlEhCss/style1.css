@@ -1,0 +1,125 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Azul claro para sensação de calma */
+    color: #333;
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-color: #002147; /* Azul escuro para confiança */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background: #004080;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+article {
+    margin-top: 20px;
+}
+
+img {
+    margin-top: 10px;
+    width: 300px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Layout principal usando Flexbox */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.main {
+    flex: 70%;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 30%;
+    background-color: #ccc;
+    padding: 20px;
+}
+
+/* Seção do formulário */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    background-color: #b5dbff; /* Azul claro */
+    color: white;
+}
+
+button {
+    background-color: #ff4500; /* Laranja para ação */
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #cc3700;
+}
+
+/* Rodapé */
+footer {
+    background-color: #ddd;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    body {
+        background-color: #f5f5f5; /* Cinza claro para simplicidade */
+    }
+    a {
+        color: blue; /* Links azuis para destaque */
+    }
+    button {
+        background-color: green; /* Verde para indicar ação positiva */
+    }
+    img {
+        width: 200px;
+    }
+}

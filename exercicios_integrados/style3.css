@@ -1,0 +1,100 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Container da lista de tarefas */
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Campo de entrada */
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0; /* Cor de fundo suave */
+}
+
+/* Botão de adicionar */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange; /* Chama atenção */
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+/* Lista de tarefas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #e6e6e6; /* Cor neutra */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: left;
+    color: gray;
+}
+
+/* Itens importantes */
+.important {
+    color: blue; /* Destacar itens importantes */
+    font-weight: bold;
+}
+
+/* Seção de mudança de cor */
+.color-change {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* Texto inicial */
+#text {
+    font-size: 18px;
+    color: #333; /* Preto ou cinza escuro */
+}
+
+/* Botão de mudar cor */
+#colorBtn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#colorBtn:hover {
+    background-color: darkgreen;
+}

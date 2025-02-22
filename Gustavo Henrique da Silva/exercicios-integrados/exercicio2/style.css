@@ -1,0 +1,12 @@
+#texto {
+    color: #333;
+    font-size: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

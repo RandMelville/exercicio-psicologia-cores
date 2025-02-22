@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #002f6c;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.coluna-esquerda {
+    width: 70%;
+    padding: 20px;
+}
+
+.coluna-direita {
+    width: 30%;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 10px;
+}

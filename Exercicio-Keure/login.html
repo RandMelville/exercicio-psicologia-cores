@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Login</h1>
+  </header>
+
+  <form id="form-login">
+    <label for="usuario">Usuário:</label>
+    <input type="text" id="usuario" name="usuario" required>
+    
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" required>
+    
+    <button type="submit">Entrar</button>
+  </form>
+
+  <!-- Elemento para exibir mensagem de erro -->
+  <div id="login-error" style="color: red; text-align: center; margin-top: 10px;"></div>
+
+  <a href="index.html">Voltar à página inicial</a>
+</body>
+</html>

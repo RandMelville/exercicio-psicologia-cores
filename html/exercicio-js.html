@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de JavaScript e Psicologia das Cores</title>
+    <link rel="stylesheet" href="../css/style_exercicio-js.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Alterando o conteúdo com JavaScript -->
+        <section class="exercicio">
+            <h1 id="titulo">Clique no botão para mudar o título</h1>
+            <button id="botao-titulo">Alterar Título</button>
+        </section>
+
+        <!-- Contagem Regressiva -->
+        <section class="exercicio">
+            <h2>Contagem Regressiva</h2>
+            <div id="contador">10</div>
+        </section>
+
+        <!-- Validação de Formulário com Feedback Visual -->
+        <section class="exercicio">
+            <h2>Formulário de Login</h2>
+            <form id="form-login">
+                <input type="text" id="usuario" placeholder="Usuário" required>
+                <input type="password" id="senha" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+                <p id="mensagemErro"></p>
+            </form>
+        </section>
+
+        <!-- Página Interativa de Tarefas com Cores Estratégicas -->
+        <section class="exercicio">
+            <h2>Lista de Tarefas</h2>
+            <input type="text" id="nova-tarefa" placeholder="Digite uma tarefa">
+            <button class="add-tarefa" id="adicionar-tarefa">Adicionar Tarefa</button>
+            <ul id="lista-tarefas"></ul>
+        </section>
+
+        <!-- Muda de Cor ao Clicar com Feedback Visual -->
+<section class="exercicio">
+    <h2>Texto Interativo</h2>
+    <p id="texto">Selecione abaixo uma cor para alterar a cor deste texto</p>
+    
+    <!-- Dropdown para seleção de cores -->
+    <label for="seletor-cor">Escolha uma cor:</label>
+    <select id="seletor-cor">
+        <option value="green">Verde</option>
+        <option value="blue">Azul</option>
+        <option value="red">Vermelho</option>
+        <option value="purple">Roxo</option>
+        <option value="orange">Laranja</option>
+    </select>
+
+    <button id="mudar-cor">Mudar Cor</button>
+</section>
+
+    </div>
+
+    <script src="../js/exercicio-javascript.js"></script>
+</body>
+</html>

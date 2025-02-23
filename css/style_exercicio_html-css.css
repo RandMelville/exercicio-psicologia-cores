@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilo geral da página */
+  body {
+    background-color: #e0f7fa; /* Azul claro suave */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #1565c0; /* Azul escuro */
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Navegação no cabeçalho */
+  header nav ul {
+    list-style: none;
+    margin-top: 15px;
+  }
+  header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  header nav ul li a:hover {
+    color: #ffca28;
+  }
+  
+  /* Área principal (conteúdo e sidebar) */
+  .main-content {
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto 20px auto;
+  }
+  
+  /* Área de conteúdo principal */
+  .column-70 {
+    flex: 0 0 70%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Área lateral (sidebar) */
+  .column-30 {
+    flex: 0 0 30%;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Seções de conteúdo interno */
+  section {
+    margin-bottom: 30px;
+  }
+  
+  section h2 {
+    color: #1565c0;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #1565c0;
+    padding-bottom: 5px;
+  }
+  
+  /* Parágrafos */
+  p {
+    margin-bottom: 15px;
+  }
+  
+  /* Imagens */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+  }
+  
+  /* Lista ordenada */
+  ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  /* Links */
+  a {
+    color: #1565c0;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  a:hover {
+    color: #ffca28;
+  }
+  
+  /* Estilo do formulário de contato */
+  #formulario {
+    max-width: 500px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  #formulario label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  #formulario input,
+  #formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  #formulario button {
+    background-color: #ff7043; /* Laranja */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  #formulario button:hover {
+    background-color: #f4511e;
+  }
+  
+  /* Rodapé */
+  footer {
+    background: #f5f5f5;
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Responsividade */
+  @media screen and (max-width: 600px) {
+    .main-content {
+      flex-direction: column;
+    }
+    .column-70,
+    .column-30 {
+      width: 100%;
+    }
+  }
+  

@@ -1,9 +1,9 @@
 body{
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom, #DAFDBA, #9AEBA3);
+    background: linear-gradient(to bottom, #A0C230 ,#005C53, #042940);
 }
 .conteiner{
-    background-color: #F2F2E8;
+    background-color: #D6D58E;
     max-width: 850px;
     margin: 0 auto;
     padding: 20px;
@@ -16,7 +16,7 @@ body{
     margin-top: -9px;
     margin-left: -15px;
     margin-right: -15px;
-    background-color: #659e6c;
+    background-color: #042940;
     padding: 10px 0;
     border-radius: 5px;
     box-sizing: border-box;
@@ -33,16 +33,95 @@ body{
 .menu ul li a{
     
     text-decoration: none;
-    color: white;
+    color:aliceblue;
     padding: 10px 10px;
     transition: backgroud 0.5s;
 }
 .menu ul li a:hover{
-    background-color: #555;
+    background-color: #A0C230;
     border-radius: 5px;
 }
 
-.titulopagina{
-    background-color: #13678A;
-    text-align: center;
+footer{
+    background-color: #042940;
+    
+    padding: 15px;
+    font-size: 14px;
+    margin-top: -9px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: -10px;
+}
+
+footer p{
+    color: #DBF227;
+    padding-left: 160px;
+}
+
+footer b{
+    color: #D6D58E;
+}
+
+h1{
+    color: #042940;
+}
+h2{
+    color: #042940;
+}
+
+label{
+    margin-bottom: white;
+}
+input{
+    border: 0;
+    width: 100%;
+    height: 40px;
+    max-width: 1000px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    text-indent: 10px;
+}
+
+input::placeholder{
+    text-indent: 10px;
+}
+
+input:focus{
+    border: #659e6c;
+    outline: none;
+    box-shadow: 0 0 5px #659e6c;
+}
+textarea{
+    border: 0;
+    width: 100%;
+    height: 80px;
+    max-width: 1000px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    text-indent: 10px;
+    padding-top: 15px;
+}
+textarea::placeholder{
+    text-indent: 10px;
+}
+
+button{
+    border: 0;
+    width: 100%;
+    height: 30px;
+    max-width: 1000px;
+    border-radius: 10px;
+    background-color:#005C53;
+    color: beige;
+}
+
+#rodape{
+    color: #9AEBA3;
+    text-align: left;
+
+}
+
+#negrito{
+    color: #042940;
+    
 }

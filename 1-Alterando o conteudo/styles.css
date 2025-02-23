@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Roboto", serif;
+}
+
+div {
+    padding-top: 150px;
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    justify-content: center;
+}
+
+#botao {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#botao:hover {
+    background-color: rgb(143, 10, 10);
+}
+
+#titulo {
+    color: black; /* Cor inicial */
+}

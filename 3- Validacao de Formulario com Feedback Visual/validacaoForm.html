@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Formulário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="formulario">
+        <div id="form">
+            <h1 id="titulo">Faça Login</h1>
+            <div id="conteudo-label">
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario" name="usuario">
+                <span id="erroUsuario" class="erro"></span><br>
+            </div>
+            <div id="conteudo-label">
+                <label for="senha">Senha:  .</label>
+                <input type="password" id="senha" name="senha">
+                <span id="erroSenha" class="erro"></span><br>
+                <button id="login" type="submit">Login</button>
+            </div>
+        </div>
+    </form>
+    <script src="scripts.js"></script>
+</body>
+</html>

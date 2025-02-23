@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+* {
+    font-family: "Roboto", serif;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+#adicao {
+    display: flex;
+    gap: 10px;
+}
+
+/* Estilos da Lista de Tarefas */
+#novaTarefa {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#adicionarTarefa {
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+}
+
+#adicionarTarefa:hover {
+    background-color: darkorange;
+}
+
+#listaTarefas, #listaConcluidas {
+    list-style: none;
+    padding: 0;
+}
+
+#listaTarefas li, #listaConcluidas li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#listaTarefas li.importante {
+    color: blue;
+    font-weight: bold;
+}
+
+#listaConcluidas li {
+    background-color: #e0ffe0; /* Fundo verde claro para tarefas concluídas */
+    text-decoration: line-through; /* Texto riscado */
+    color: #555; /* Cor mais suave */
+}
+
+/* Estilos da Página Mudar Cor */
+#texto {
+    font-size: 1.2em;
+    color: #333;
+}
+
+#mudarCor {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#mudarCor:hover {
+    background-color: darkgreen;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Interativo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Projeto Interativo</h1>
+        <nav>
+            <ul>
+                <li><a href="#tarefas">Lista de Tarefas</a></li>
+                <li><a href="/exercicio-psicologia-cores/Exercicios integrados/mudaCorTexto.html">Mudar Cor do Texto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Página 1: Lista de Tarefas -->
+    <section id="tarefas">
+        <h2>Lista de Tarefas</h2>
+        <div class="container">
+            <div id="adicao">
+                <input type="text" id="novaTarefa" placeholder="Digite uma nova tarefa">
+                <button id="adicionarTarefa">Adicionar Tarefa</button>
+            </div>
+            
+            <h3>Tarefas Pendentes</h3>
+            <ul id="listaTarefas"></ul>
+
+            <h3>Tarefas Concluídas</h3>
+            <ul id="listaConcluidas"></ul>
+        </div>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>

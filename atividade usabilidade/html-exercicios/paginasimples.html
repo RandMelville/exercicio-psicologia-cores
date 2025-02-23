@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Completa com Estilos</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS externo -->
+</head>
+<body>
+    <header> <!-- O header é onde sera definido nosso cabeçalho, ele serve para mostrar o titulo da pagina e coisas essencias de cabeçalho-->
+        <h1>Pagina atividade professor Randerson</h1>
+    </header>
+
+    <nav><!-- O nav serve para mostrar os links da pagina, alem de ser a parte de navegacao do usuario-->
+        <a href="#section1">Início</a>
+        <a href="#form">Formulário</a>
+        <a href="#footer">Rodapé</a>
+    </nav>
+
+    <main> <!--O main serve para mostrar o conteudo principal da pagina-->
+        <section id="section1"> <!-- O section serve para mostrar um bloco de conteudo dentro do main, semelhante a div-->
+            <h2>Olá mundo</h2>
+            <p>Esta é uma página simples criada para fins de aprendizado foi utilizado inteligencia artificial para potencializar os resultados, visto que, senti dificuldades em css.</p>
+            <img src="html-css-js.png" alt="Imagem Exemplo">
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+            <a href="https://www.example.com">site externo de exemplo</a>
+        </section>
+
+        <section id="form">
+            <h2>Formulário de Contato</h2>
+            <form action="/submit" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+                <article> <!-- O article serve para mostrar um bloco de conteudo dentro do main -->
+                    <h3>Artigo 1</h3>
+                    <p>Conteúdo do artigo 1.</p>
+                </article>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer"> <!-- O footer serve para mostrar o rodape da pagina, geralmente com informacoes de contato e direitos autorais-->
+        <p>&copy; 2025 Meu Site</p>
+    </footer>
+</body>
+</html>

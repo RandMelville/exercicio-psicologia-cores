@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Título Original</h1>
+        <button id="botao" onclick="mudarTitulo()">Mudar Título</button>
+    </header>
+
+    <section>
+        <h2>Contagem Regressiva</h2>
+        <div id="contador">10</div>
+        <button onclick="iniciarContagem()">Iniciar Contagem</button>
+    </section>
+
+    <section>
+        <h2>Formulário de Login</h2>
+        <form id="loginForm" onsubmit="validarFormulario(event)">
+            <label for="usuario">Usuário:</label>
+            <input type="text" id="usuario" name="usuario" required><br><br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required><br><br>
+
+            <button type="submit">Entrar</button>
+            <p id="mensagemErro" style="color: red;"></p>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0; /* Cor de fundo suave */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#tarefas {
+    background-color: #f9f9f9; /* Cor de fundo suave para o campo de tarefas */
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+#campoTarefa {
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+}
+
+#botaoAdicionar {
+    padding: 10px 20px;
+    background-color: #ff9800; /* Cor laranja para chamar atenção */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#botaoAdicionar:hover {
+    background-color: #fb8c00; /* Cor mais intensa no hover */
+}
+
+ul {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #555; /* Cor neutra para o texto */
+}
+
+li.importante {
+    color: blue; /* Destaque para tarefas importantes */
+}
+
+#texto {
+    font-size: 18px;
+    color: #333; /* Texto inicial em cinza escuro */
+    margin-bottom: 20px;
+}
+
+#botaoCor {
+    padding: 10px 20px;
+    background-color: #4caf50; /* Cor verde para destacar ação */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#botaoCor:hover {
+    background-color: #45a049; /* Efeito hover no botão */
+}

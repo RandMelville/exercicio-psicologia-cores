@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        form {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .erro {
+            border: 2px solid red;
+            background-color: #ffdddd;
+        }
+
+        .valido {
+            border: 2px solid green;
+            background-color: #ddffdd;
+        }
+
+        #mensagemErro {
+            color: red;
+            display: none;
+        }
+
+        button {
+            background-color: orange;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="formLogin">
+        <h2>Login</h2>
+        <input type="text" id="usuario" placeholder="Usuário">
+        <input type="password" id="senha" placeholder="Senha">
+        <p id="mensagemErro">Preencha todos os campos!</p>
+        <button type="submit">Entrar</button>
+    </form>
+
+    <script>
+        document.getElementById("formLogin").addEventListener("submit", function(event) {
+            let usuario = document.getElementById("usuario");
+            let senha = document.getElementById("senha");
+            let mensagemErro = document.getElementById("mensagemErro");
+
+            if (usuario.value.trim() === "" || senha.value.trim() === "") {
+                mensagemErro.style.display = "block";
+                usuario.classList.add("erro");
+                senha.classList.add("erro");
+                event.preventDefault(); // Impede o envio do formulário
+            } else {
+                mensagemErro.style.display = "none";
+                usuario.classList.remove("erro");
+                senha.classList.remove("erro");
+                usuario.classList.add("valido");
+                senha.classList.add("valido");
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

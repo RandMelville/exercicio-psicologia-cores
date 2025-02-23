@@ -1,0 +1,190 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilizando o corpo da página */
+body {
+    background-color: #f0f8ff; /* Azul claro para sensação de tranquilidade */
+    color: #333;
+    padding: 20px;
+}
+
+/* Estilizando títulos */
+h1, h2, h3 {
+    color: #004080; /* Azul escuro para autoridade e confiança */
+    margin-bottom: 10px;
+}
+
+/* Estilizando parágrafos */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Estilizando a lista ordenada */
+ol {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+ol li {
+    font-size: 18px;
+    color: #005f99;
+    margin-bottom: 5px;
+}
+
+/* Links */
+a {
+    display: inline-block;
+    background: #007acc; /* Azul para interatividade */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+a:hover {
+    background: #005f99; /* Azul mais escuro para hover */
+}
+
+/* Navegação */
+nav {
+    background: #004080;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: #005f99;
+}
+
+/* Estrutura semântica */
+main {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sessão */
+section {
+    padding: 15px;
+    background: #cce5ff; /* Azul claro */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Artigo */
+article {
+    padding: 15px;
+    background: #e6f2ff; /* Azul ainda mais claro */
+    border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+    background: #f0f0f0; /* Cinza claro */
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Imagem no rodapé */
+footer img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+/* Estilizando o formulário */
+form {
+    background: white; /* Fundo branco para destacar */
+    padding: 20px;
+    max-width: 400px; /* Define um tamanho máximo para o formulário */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Coloca os elementos em coluna */
+    align-items: center; /* Centraliza os itens */
+}
+
+/* Estilizando os rótulos (labels) */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: left; /* Alinha os rótulos à esquerda */
+}
+
+/* Campos de entrada */
+input, textarea {
+    width: 100%; /* Ocupa toda a largura do formulário */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #005f99;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilizando o botão */
+button {
+    background: #005f99; /* Vermelho alaranjado para ação */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background: #014a77; /* Tom mais escuro no hover */
+}
+
+
+/* Responsividade */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    a {
+        width: 100%;
+        text-align: center;
+    }
+}
+

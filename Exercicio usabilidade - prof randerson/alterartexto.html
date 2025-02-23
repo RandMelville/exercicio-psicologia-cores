@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterando o Título</title>
+
+    
+    <style>
+        h1 {
+            color: black;
+            text-align: center;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: rgb(6, 68, 202);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(4, 11, 107);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Clique no botão para mudar este título</h1>
+    <button onclick="mudarTitulo()">Mudar Título</button>
+
+    <script>
+        function mudarTitulo() {
+            let titulo = document.getElementById("titulo");
+            titulo.innerText = "Título Alterado com Sucesso!";
+            titulo.style.color = "red"; // Verde para indicar sucesso
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Título da página que aparece na aba do navegador -->
+    <title>Formulário de Contato</title>
+    <style>
+        /* Estilos gerais para o corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #A8DADC; /* Cor de fundo azul claro */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para o contêiner do formulário */
+        .container {
+            max-width: 800px; /* Largura máxima */
+            margin: 50px auto; /* Centraliza o formulário na tela */
+            background-color: #fff; /* Fundo branco */
+            padding: 30px;
+            border-radius: 8px; /* Bordas arredondadas */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+
+        /* Estilos para o título da página */
+        h1 {
+            text-align: center; /* Centraliza o título */
+            color: #1b375d; /* Cor azul escuro */
+        }
+
+        /* Estilos para os campos do formulário */
+        .form-group {
+            margin-bottom: 15px; /* Espaçamento entre os campos */
+        }
+
+        label {
+            font-weight: bold; /* Rótulo em negrito */
+            display: block; /* Faz o rótulo ocupar toda a largura */
+            margin-bottom: 5px; /* Espaçamento abaixo do rótulo */
+            color: #1D3557; /* Cor do texto do rótulo */
+        }
+
+        /* Estilos para os campos de texto e textarea */
+        input[type="text"], input[type="email"], textarea {
+            width: 96%; /* Campos ocupando 96% da largura */
+            padding: 15px;
+            margin: 5px 0;
+            border: 1px solid #46B3A7; /* Borda verde claro */
+            border-radius: 4px; /* Bordas arredondadas */
+            background-color: #46B3A7; /* Fundo verde claro */
+            color: white; /* Texto em branco */
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical; /* Permite redimensionamento */
+            height: 150px; /* Altura inicial */
+        }
+
+        /* Estilo do botão de envio */
+        .button {
+            display: block;
+            width: 100%; /* Largura completa */
+            padding: 15px;
+            background-color: #E63946; /* Cor vermelha */
+            color: white; /* Texto em branco */
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer; /* Cursor de mão */
+        }
+
+        /* Efeito ao passar o mouse sobre o botão */
+        .button:hover {
+            background-color: #D62828; /* Cor vermelha mais escura */
+        }
+
+        /* Informações de contato abaixo do formulário */
+        .contact-info {
+            text-align: center; /* Centraliza o texto */
+            margin-top: 30px;
+        }
+
+        .contact-info p {
+            font-size: 16px; /* Tamanho do texto */
+            color: #333; /* Cor do texto */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contêiner principal com o formulário -->
+    <div class="container">
+        <h1>Entre em Contato</h1>
+
+        <!-- Formulário com campos para nome, e-mail e mensagem -->
+        <form action="https://github.com/HenriquePlebani" method="POST">
+            <!-- Campo para o nome -->
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <!-- Campo para o e-mail -->
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <!-- Campo para a mensagem -->
+            <div class="form-group">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <!-- Botão para enviar o formulário -->
+            <button type="submit" class="button">Enviar</button>
+        </form>
+
+        <!-- Informações de contato adicionais -->
+        <div class="contact-info">
+            <p>Telefone: (11) 99241-8086</p>
+            <p>E-mail: henrique.plebani@outlook.com</p>
+        </div>
+    </div>
+
+</body>
+</html>

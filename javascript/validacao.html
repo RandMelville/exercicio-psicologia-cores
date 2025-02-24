@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Formulário</title>
+    <style>
+        /* Estilizando o corpo da página */
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilizando os campos de entrada */
+        input {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 200px;
+            border: 2px solid gray;
+            border-radius: 5px;
+        }
+
+        /* Classe para indicar erro no campo */
+        .erro {
+            border-color: red;
+        }
+
+        /* Classe para indicar que o campo está correto */
+        .valido {
+            border-color: green;
+        }
+
+        /* Estilizando a mensagem de erro */
+        #mensagem {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+
+    <!-- Formulário de login -->
+    <form id="formulario">
+        <input type="text" id="usuario" placeholder="Usuário">
+        <input type="password" id="senha" placeholder="Senha">
+        <button type="submit">Entrar</button>
+        <p id="mensagem"></p> <!-- Parágrafo onde a mensagem de erro ou sucesso será exibida -->
+    </form>
+
+    <script>
+        // Captura o evento de submissão do formulário
+        document.getElementById("formulario").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita o envio do formulário
+            
+            // Obtém os elementos de usuário e senha
+            let usuario = document.getElementById("usuario");
+            let senha = document.getElementById("senha");
+            let mensagem = document.getElementById("mensagem");
+
+            // Se algum campo estiver vazio, exibe a mensagem de erro e adiciona a classe de erro
+            if (usuario.value === "" || senha.value === "") {
+                mensagem.innerText = "Preencha todos os campos!";
+                usuario.classList.toggle("erro", usuario.value === "");
+                senha.classList.toggle("erro", senha.value === "");
+                return;
+            }
+
+            // Remove a classe de erro caso os campos estejam preenchidos
+            usuario.classList.remove("erro");
+            senha.classList.remove("erro");
+
+            // Adiciona a classe de campo válido
+            usuario.classList.add("valido");
+            senha.classList.add("valido");
+
+            // Exibe mensagem de sucesso
+            mensagem.innerText = "Login válido!";
+            mensagem.style.color = "green";
+        });
+    </script>
+</body>
+</html>

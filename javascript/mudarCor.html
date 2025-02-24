@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muda de Cor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f9f9f9;
+        }
+
+        #text {
+            font-size: 24px;
+            color: #333; /* Texto inicial em cinza escuro */
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50; /* Cor verde para ação */
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Alterar Cor do Texto</h1>
+
+    <p id="text">Este é o texto inicial.</p>
+    <button onclick="changeColor()">Mudar Cor</button>
+
+    <script>
+        function changeColor() {
+            const textElement = document.getElementById('text');
+            textElement.style.color = '#1E90FF'; // Muda a cor para azul
+
+            // Simulando um feedback visual
+            setTimeout(() => {
+                textElement.style.color = '#32CD32'; // Muda para verde (sucesso)
+            }, 1000);
+        }
+    </script>
+
+</body>
+</html>

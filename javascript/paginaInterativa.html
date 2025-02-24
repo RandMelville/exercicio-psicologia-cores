@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <style>
+        /* Estilo geral do corpo da página */
+        body {
+            background-color: #e4f1f5; /* Cor suave de fundo */
+            font-family: 'Arial', sans-serif;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Container que envolve todo o conteúdo */
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 600px;
+            text-align: center;
+        }
+
+        /* Estilo para o título */
+        h1 {
+            color: #4CAF50;
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+
+        /* Estilo para o campo de entrada e botão */
+        input, button {
+            padding: 15px;
+            font-size: 16px;
+            margin: 10px 0;
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        /* Estilo para o botão de adicionar tarefa */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 18px;
+        }
+
+        /* Efeito para o botão quando o mouse passa sobre ele */
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Estilo da lista de tarefas */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+            max-height: 400px;
+            overflow-y: auto;
+            transition: max-height 0.3s ease;
+        }
+
+        /* Estilo para cada item de tarefa na lista */
+        li {
+            background-color: #fff;
+            margin: 15px 0;
+            padding: 15px; /* Ajustado para diminuir o espaçamento ao redor da tarefa */
+            border-radius: 8px;
+            color: #333;
+            border: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        /* Efeito ao passar o mouse sobre a tarefa */
+        li:hover {
+            background-color: #f0f0f0;
+            transform: scale(1.05);
+        }
+
+        /* Estilo para tarefas concluídas */
+        li.completed {
+            text-decoration: line-through; /* Risca o texto */
+            background-color: #d3ffd3; /* Verde claro para mostrar que está concluído */
+        }
+
+        /* Estilo para tarefas importantes */
+        .importante {
+            color: #1E90FF; /* Azul para destacar itens importantes */
+        }
+
+        /* Estilo para o botão de deletar tarefa */
+        .delete-btn {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            font-size: 14px;
+        }
+
+        /* Efeito para o botão de deletar quando o mouse passa sobre ele */
+        .delete-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        /* Estilo para o botão de concluir tarefa */
+        .complete-btn {
+            background-color: #FFD700;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            font-size: 14px;
+        }
+
+        /* Efeito para o botão de concluir quando o mouse passa sobre ele */
+        .complete-btn:hover {
+            background-color: #FFCC00;
+        }
+
+        /* Margem esquerda para os botões para espaçá-los mais do texto da tarefa */
+        .delete-btn, .complete-btn {
+            margin-left: 10px; /* Espaçamento entre os botões e o texto da tarefa */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Container que contém o conteúdo da página -->
+    <div class="container">
+        <!-- Título da página -->
+        <h1>Lista de Tarefas</h1>
+
+        <!-- Campo de entrada para adicionar uma nova tarefa -->
+        <input type="text" id="taskInput" placeholder="Adicione uma tarefa">
+
+        <!-- Botão para adicionar a tarefa -->
+        <button onclick="addTask()">Adicionar Tarefa</button>
+
+        <!-- Lista de tarefas será preenchida aqui -->
+        <ul id="taskList">
+            <!-- Lista de tarefas será atualizada aqui -->
+        </ul>
+    </div>
+
+    <script>
+        // Função para adicionar uma nova tarefa
+        function addTask() {
+            // Obtendo o valor do campo de entrada
+            const taskInput = document.getElementById('taskInput');
+            const taskText = taskInput.value.trim(); // Removendo espaços extras
+
+            // Verificando se o campo de entrada está vazio
+            if (taskText === '') {
+                alert('Por favor, insira uma tarefa!'); // Exibe um alerta se não houver texto
+                return; // Retorna sem fazer nada se o campo estiver vazio
+            }
+
+            // Obtendo a lista de tarefas
+            const taskList = document.getElementById('taskList');
+
+            // Criando um novo item de lista para a tarefa
+            const taskItem = document.createElement('li');
+            taskItem.textContent = taskText; // Adiciona o texto da tarefa ao item da lista
+
+            // Se a tarefa contiver a palavra "importante", ela será destacada
+            if (taskText.toLowerCase().includes('importante')) {
+                taskItem.classList.add('importante'); // Adiciona a classe para estilizar tarefas importantes
+            }
+
+            // Criando o botão de concluir para a tarefa
+            const completeBtn = document.createElement('button');
+            completeBtn.textContent = 'Concluir'; // Texto do botão
+            completeBtn.classList.add('complete-btn'); // Adiciona a classe para estilizar o botão
+            completeBtn.onclick = function() {
+                taskItem.classList.toggle('completed'); // Marca a tarefa como concluída (ou não)
+            };
+
+            // Criando o botão de deletar para a tarefa
+            const deleteBtn = document.createElement('button');
+            deleteBtn.textContent = 'Deletar'; // Texto do botão
+            deleteBtn.classList.add('delete-btn'); // Adiciona a classe para estilizar o botão
+            deleteBtn.onclick = function() {
+                taskList.removeChild(taskItem); // Remove a tarefa da lista
+            };
+
+            // Adicionando os botões de concluir e deletar ao item da tarefa
+            taskItem.appendChild(completeBtn);
+            taskItem.appendChild(deleteBtn);
+
+            // Adicionando o item da tarefa à lista de tarefas
+            taskList.appendChild(taskItem);
+
+            // Limpando o campo de entrada após adicionar a tarefa
+            taskInput.value = '';
+        }
+    </script>
+
+</body>
+</html>

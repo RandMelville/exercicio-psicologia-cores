@@ -10,8 +10,14 @@ const interval = setInterval(() => {
     timerElement.textContent = tempo;
 
     // Muda para laranja quando estiver próximo do fim
+    if(tempo =>5){
+        timerElement.style.color = "blue";
+    }
     if (tempo <= 5) {
         timerElement.style.color = "orange";
+    }
+    if(tempo <=3){
+        timerElement.style.color = "red";
     }
 
     // Se o tempo acabar, exibe a mensagem e para o contador

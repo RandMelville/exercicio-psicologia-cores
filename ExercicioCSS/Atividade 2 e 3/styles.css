@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -46,17 +46,6 @@ header {
     border-radius: 8px;
 }
 
-/* LINKS E BOTÕES */
-a {
-    color: #007BFF; /* Azul para links */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 .btn {
     display: inline-block;
     margin-top: 10px;
@@ -93,10 +82,6 @@ footer {
     }
 
     .main-content, .sidebar {
-        flex: 100%; /* Ocupam toda a largura */
-    }
-
-    .btn {
-        background: #ff6600; /* Botão laranja em telas menores */
+        flex: 100%; 
     }
 }

@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+button {
+    padding: 5px 20px;
+    color: white;
+    background-color: red;
+}

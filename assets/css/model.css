@@ -1,0 +1,12 @@
+.modal-content {
+    border-radius: 0.3rem;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+}
+
+.modal-footer {
+    justify-content: center;
+}

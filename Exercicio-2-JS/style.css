@@ -1,0 +1,20 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o corpo */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Estilizando o número da contagem regressiva */
+#timer {
+    font-size: 48px;
+    font-weight: bold;
+    color: #d32f2f; /* Vermelho para urgência */
+}

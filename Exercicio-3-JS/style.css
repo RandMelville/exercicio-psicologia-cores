@@ -1,0 +1,78 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Container do formulário */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+/* Estilizando os campos */
+.campo {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Estilo do botão */
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Efeito hover no botão */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Mensagem de erro */
+.erro {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Estilos para campos válidos */
+input.valido {
+    border-color: #4caf50; /* Verde */
+}
+
+/* Estilos para campos inválidos */
+input.invalido {
+    border-color: red;
+}

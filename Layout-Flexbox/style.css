@@ -1,0 +1,56 @@
+    /* Reset básico para garantir que o layout tenha um visual consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Cor de fundo leve para não competir com o conteúdo */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #003366; /* Azul escuro, transmite confiança e autoridade */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Layout principal com Flexbox */
+main {
+    display: flex;
+    justify-content: space-between; /* Espaça as colunas */
+    padding: 20px;
+    flex: 1; /* Faz o main ocupar o restante da altura da tela */
+}
+
+/* Coluna principal - 70% de largura */
+.conteudo-principal {
+    width: 70%;
+    padding: 20px;
+    background-color: #ffffff; /* Cor de fundo branca para o conteúdo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Coluna secundária - 30% de largura */
+.conteudo-secundario {
+    width: 30%;
+    padding: 20px;
+    background-color: #e1f5fe; /* Azul claro para a coluna secundária */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Rodapé */
+footer {
+    background-color: #f1f1f1; /* Cor neutra, como cinza claro */
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}

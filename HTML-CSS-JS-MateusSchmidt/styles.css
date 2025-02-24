@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Fundo suave */
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #eaeaea; /* Fundo suave */
+}
+
+button {
+    background-color: #f39c12; /* Laranja para chamar atenção */
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #e67e22;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f5f5f5;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.important {
+    color: blue; /* Destaque para tarefas importantes */
+    font-weight: bold;
+}

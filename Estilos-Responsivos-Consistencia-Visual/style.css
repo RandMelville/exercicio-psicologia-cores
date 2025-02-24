@@ -1,0 +1,103 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f48e; /* Cinza claro para manter o design limpo */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #043f7a; /* Azul escuro para transmitir confiança */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Layout principal usando Flexbox */
+main {
+    display: flex;
+    justify-content: space-between; /* Distribui as colunas */
+    padding: 20px;
+    flex: 1;
+}
+
+/* Coluna principal - 70% de largura */
+.conteudo-principal {
+    width: 70%;
+    padding: 20px;
+    background-color: #ffffff; /* Fundo branco para destacar o conteúdo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Coluna secundária - 30% de largura */
+.conteudo-secundario {
+    width: 30%;
+    padding: 20px;
+    background-color: #8bd7fa; /* Azul claro para diferenciar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Rodapé */
+footer {
+    background-color: #bbb7b7; /* Cinza claro para não chamar muita atenção */
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+/* LINKS E BOTÕES */
+a {
+    text-decoration: none;
+    color: #007bff; /* Azul para links */
+}
+
+/* Estilo do botão */
+button {
+    background-color: #ff9800; /* Laranja para chamar atenção */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+    background-color: #f57c00; /* Um tom mais forte de laranja */
+}
+
+/* RESPONSIVIDADE - Para telas menores que 600px */
+@media (max-width: 600px) {
+    body {
+        background-color: #ffffff; /* Fundo branco para manter um design limpo */
+    }
+    
+    main {
+        flex-direction: column; /* Empilha os elementos em uma única coluna */
+    }
+
+    .conteudo-principal, .conteudo-secundario {
+        width: 100%; /* Ocupa 100% da largura */
+        margin-bottom: 20px;
+    }
+    
+    button {
+        background-color: #4caf50; /* Verde para telas pequenas */
+    }
+
+    button:hover {
+        background-color: #388e3c; /* Tom mais escuro de verde */
+    }
+}

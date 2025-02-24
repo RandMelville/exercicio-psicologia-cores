@@ -1,0 +1,36 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Estilo do título */
+h1 {
+    font-size: 28px;
+    color: black; /* Cor inicial */
+}
+
+/* Estilo do botão */
+button {
+    background-color: #d32f2f; /* Vermelho para chamar atenção */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Efeito hover */
+button:hover {
+    background-color: #b71c1c;
+}

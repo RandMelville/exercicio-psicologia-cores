@@ -1,0 +1,62 @@
+/* Cor de fundo geral da página (calma e confiança) */
+body {
+    background-color: #add8e6; /* Azul claro para transmitir calma e confiança */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Estilo do formulário */
+form {
+    background-color: #ffffff; /* Fundo branco para destacar o formulário */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    color: #388e3c; /* Verde escuro para o título */
+}
+
+/* Estilo dos campos de entrada */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #388e3c; /* Verde escuro para os contornos */
+    border-radius: 4px;
+    background-color: #a5d6a7; /* Verde claro */
+    color: white; /* Texto branco */
+}
+
+/* Estilo do botão de enviar */
+button[type="submit"] {
+    background-color: #ff7043; /* Laranja para transmitir urgência */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Efeito no botão de envio ao passar o mouse */
+button[type="submit"]:hover {
+    background-color: #ff5722; /* Um tom mais intenso de laranja */
+}
+
+/* Estilo do link */
+a {
+    text-decoration: none;
+    color: #388e3c; /* Verde para o link */
+}
+
+/* Adiciona espaçamento entre os campos */
+label {
+    font-weight: bold;
+}

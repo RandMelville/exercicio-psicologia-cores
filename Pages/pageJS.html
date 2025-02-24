@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Psicologia das Cores</title>
+    <style>
+        .urgent-button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .countdown {
+            font-size: 2em;
+            color: orange;
+        }
+        .error {
+            color: red;
+        }
+        .valid {
+            color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Título Original</h1>
+    <button class="urgent-button" onclick="changeTitle()">Clique aqui</button>
+
+    <h2 id="countdown" class="countdown">10</h2>
+
+    <form id="loginForm" onsubmit="return validateForm()">
+        <label for="username">Usuário:</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Login">
+        <p id="error-message" class="error"></p>
+    </form>
+
+    <script>
+        function changeTitle() {
+            const title = document.getElementById('title');
+            title.textContent = "Título Alterado";
+            title.style.color = "blue";
+        }
+
+        function startCountdown() {
+            let countdownElement = document.getElementById('countdown');
+            let countdownValue = 10;
+            let countdownInterval = setInterval(() => {
+                countdownValue--;
+                countdownElement.textContent = countdownValue;
+                if (countdownValue <= 0) {
+                    clearInterval(countdownInterval);
+                    countdownElement.textContent = "Tempo acabou!";
+                    countdownElement.style.color = "green";
+                }
+            }, 1000);
+        }
+
+        function validateForm() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('error-message');
+
+            if (username === "" || password === "") {
+                errorMessage.textContent = "Todos os campos são obrigatórios!";
+                return false;
+            } else {
+                errorMessage.textContent = "";
+                return true;
+            }
+        }
+
+        window.onload = startCountdown;
+    </script>
+</body>
+</html>

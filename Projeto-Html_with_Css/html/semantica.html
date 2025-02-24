@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Semântica</title>
+    <link rel="stylesheet" href="../css/style.css"> <!-- Link para o arquivo de CSS -->
+</head>
+<body>
+
+    <!-- HEADER: Cabeçalho da página -->
+    <header>
+        <h1>Seja muito bem-vindo ao meu cantinho!</h1>
+    </header>
+
+    <!-- NAV: Menu de navegação -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="formulario.html">Formulário</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN: Conteúdo principal da página -->
+    <main>
+
+        <!-- SECTION: Seção com informações gerais sobre a página -->
+        <section>
+            <h2>Lista de compras para fazer um hambúrguer </h2>
+            <ol>
+                <li>Pão de hambúrguer</li>
+                <li>Carne de hambúrguer</li>
+                <li>Queijo</li>
+                <li>Alface</li>
+                <li>Tomate</li>
+                <li>Cebola</li>
+                <li>Molho (ketchup, maionese, mostarda, etc.)</li>
+                <li>Batata frita</li>
+                <li>Refrigerante</li>
+            </ol>
+        </section>
+
+        <!-- SECTION: Seção com uma imagem ilustrativa -->
+        <section>
+            <h2>Veja como preparar um delicioso hambúrguer</h2>
+            <img src="../imagens/Hamburguer.png" alt="Imagem ilustrativa de um hambúrguer" width="300">
+            <p><a href="https://www.youtube.com/watch?v=9brmT8rRR2w">Clique aqui para ver como fazer</a></p>
+        </section>
+
+        <!-- ARTICLE: Formulário de contato -->
+        <article>
+            <h2>Formulário para contato</h2>
+            <form action="processar_formulario.php" method="post">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </article>
+
+    </main>
+
+    <!-- FOOTER: Rodapé com informações de copyright -->
+    <footer>
+        <p>© 2025 Meu Cantinho. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com Flexbox</title>
+    <style>
+        /* Reset de margens e padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #003366; /* Azul escuro */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        /* Área principal de conteúdo */
+        main {
+            display: flex;
+            flex: 1; /* Preencher o espaço restante */
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        /* Coluna de 70% */
+        .coluna-principal {
+            width: 70%;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Coluna de 30% */
+        .coluna-secundaria {
+            width: 30%;
+            background-color: #e0f7fa; /* Azul claro */
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #d3d3d3; /* Cinza claro */
+            color: #333;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+
+        /* Estilo para as imagens na coluna principal */
+        .pizza-imagem {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para a lista de sabores na coluna secundária */
+        .sabores-lista {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .sabores-lista li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bem-vindo ao pizza.com</h1>
+    </header>
+
+    <main>
+        <div class="coluna-principal">
+            <h2>Deliciosas Pizzas</h2>
+            <!-- Imagem de Pizza -->
+            <img src="../imagens/pizza sabor quatro queijos copy.jpg" alt="Pizza quatro queijos" class="pizza-imagem">   
+        </div>
+        <div class="coluna-secundaria">
+            <h2>Sabores de Pizza</h2>
+            <ul class="sabores-lista">
+                <li>Margherita</li>
+                <li>Pepperoni</li>
+                <li>Vegetariana</li>
+                <li>Calabresa</li>
+                <li>Frango com Catupiry</li>
+                <li>Quatro Queijos</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Henrique Plebani</p>
+    </footer>
+
+</body>
+</html>

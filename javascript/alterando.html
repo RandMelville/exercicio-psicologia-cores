@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterando o Título</title>
+    <style>
+        /* Adicionando um fundo com gradiente */
+        body {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #ff6b6b, #f06595);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            transition: all 0.5s ease-in-out;
+        }
+
+        /* Estilizando o título com transição */
+        h1 {
+            color: #fff;
+            font-size: 3rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        /* Estilizando o botão com efeitos */
+        button {
+            background-color: #ffcc00; /* Cor amarela para destaque */
+            color: black;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+            margin-top: 20px;
+        }
+
+        /* Efeito de hover no botão */
+        button:hover {
+            background-color: #ffab00;
+            transform: scale(1.1);
+        }
+
+        /* Efeito de hover no título */
+        h1:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- Título que será alterado -->
+        <h1 id="titulo">Te amo</h1>
+
+        <!-- Botão que, ao ser clicado, chama a função mudarTitulo() -->
+        <button onclick="mudarTitulo()">Clique Aqui</button>
+    </div>
+
+    <script>
+        function mudarTitulo() {
+            // Obtendo o elemento h1 pelo ID
+            let titulo = document.getElementById("titulo");
+            
+            // Verificando o texto atual do título
+            if (titulo.innerText === "Te amo") {
+                // Alterando o texto do título
+                titulo.innerText = "Luiza";
+                
+                // Mudando a cor do título para verde 
+                titulo.style.color = "green";
+            } else {
+                // Voltando o texto ao original
+                titulo.innerText = "Te amo";
+                
+                // Mudando a cor do título para preto
+                titulo.style.color = "#fff";
+            }
+        }
+    </script>
+</body>
+</html>

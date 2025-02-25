@@ -1,0 +1,52 @@
+
+            /* Reset básico de margens e padding */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            /* Estilo do corpo da página */
+            body {
+                font-family: Arial, sans-serif;
+                min-height: 100vh;
+            }
+    
+            /* Cabeçalho */
+            header {
+                background-color: #051b7e; /* Azul escuro */
+                color: rgb(253, 253, 253);
+                text-align: center;
+                padding: 20px;
+                width: 100%;
+            }
+    
+            /* Container principal com flexbox */
+            main {
+                display: flex;
+                padding: 20px;
+            }
+    
+            /* Coluna principal */
+            .main-content {
+               width: 70%;
+                padding-right: 20px;
+                background-color: rgb(80, 153, 74);
+            }
+    
+            /* Coluna lateral */
+            .sidebar {
+                width: 30%;
+                background-color: #88dd9d; /* Cor de fundo suave para a sidebar */
+                padding: 20px;
+            }
+    
+            /* Rodapé */
+            footer {
+                background-color: #8b8b8b; /* Cinza claro */
+                color: #333;
+                text-align: center;
+                padding: 10px;
+                width: 100%;
+            }
+       

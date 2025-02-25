@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(131, 235, 131);
+}
+.p{
+    background-color: cadetblue;
+}
+button{
+    background-color: red;
+}

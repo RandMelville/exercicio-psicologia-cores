@@ -1,0 +1,16 @@
+#texto {
+    color: #333;
+    font-size: 50px;
+}
+
+button {
+    padding: 25px 40px;
+    background-color: #0c552a;
+    color: #e9e2e2;
+    border: none;
+    cursor: pointer;
+}
+body{
+    text-align: center;
+    padding: 25px 40px;
+}

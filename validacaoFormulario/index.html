@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Formulário</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        form {
+            max-width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: white;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .erro {
+            border-color: red !important;
+        }
+
+        .valido {
+            border-color: green !important;
+        }
+
+        #mensagem {
+            color: red;
+            font-weight: bold;
+            display: none;
+        }
+
+        button {
+            background-color: blue; /* Azul para indicar ação positiva */
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Login</h1>
+    <form id="loginForm">
+        <input type="text" id="usuario" placeholder="Usuário">
+        <input type="password" id="senha" placeholder="Senha">
+        <button type="submit">Entrar</button>
+        <p id="mensagem">Preencha todos os campos!</p>
+    </form>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            let usuario = document.getElementById("usuario");
+            let senha = document.getElementById("senha");
+            let mensagem = document.getElementById("mensagem");
+
+            if (usuario.value === "" || senha.value === "") {
+                mensagem.style.display = "block";
+                usuario.classList.add("erro");
+                senha.classList.add("erro");
+            } else {
+                mensagem.style.display = "none";
+                usuario.classList.remove("erro");
+                senha.classList.remove("erro");
+                usuario.classList.add("valido");
+                senha.classList.add("valido");
+                alert("Login bem-sucedido!");
+            }
+        });
+    </script>
+
+</body>
+</html>

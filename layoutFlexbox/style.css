@@ -1,0 +1,28 @@
+@media (max-width: 600px) {
+    body {
+        background-color: #f5f5f5; /* Cinza claro para um design mais clean */
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .coluna-esquerda, .coluna-direita {
+        flex: 100%;
+        background-color: white; /* Fundo neutro */
+    }
+
+    /* Links e botões interativos */
+    a {
+        color: #1e88e5; /* Azul para indicar link */
+        text-decoration: none;
+    }
+
+    button {
+        background-color: #4caf50; /* Verde para indicar ação */
+    }
+
+    button:hover {
+        background-color: #388e3c;
+    }
+}

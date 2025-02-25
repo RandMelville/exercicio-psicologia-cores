@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Cabeçalho azul escuro para transmitir confiança */
+        header {
+            background-color: #1e3a8a; /* Azul escuro */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Layout Flexbox */
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .coluna-esquerda {
+            flex: 70%;
+            background-color: #e3f2fd; /* Azul claro para transmitir leveza */
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .coluna-direita {
+            flex: 30%;
+            background-color: #ffeb3b; /* Amarelo para chamar atenção */
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Rodapé cinza claro para não competir com o conteúdo */
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meu Site Profissional</h1>
+    </header>
+
+    <div class="container">
+        <div class="coluna-esquerda">
+            <h2>Conteúdo Principal</h2>
+            <p>Aqui está o conteúdo principal do site, com informações importantes.</p>
+        </div>
+        <div class="coluna-direita">
+            <h2>Informações Extras</h2>
+            <p>Espaço para um menu lateral, anúncios ou links importantes.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

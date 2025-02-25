@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Exercícios de JavaScript</h1>
+    
+    <!-- Exercício 1: Alterando o conteúdo com JavaScript -->
+    <div class="exercicio">
+        <h2>Alterando o conteúdo com JavaScript</h2>
+        <h3 id="titulo">Clique no botão para mudar o título</h3>
+        <button class="button" onclick="mudarTitulo()">Mudar Título</button>
+    </div>
+
+    <!-- Exercício 2: Contagem Regressiva -->
+    <div class="exercicio">
+        <h2>Contagem regressiva</h2>
+        <div id="contador" class="countdown">10</div>
+        <button class="button" onclick="iniciarContagemRegressiva()">Iniciar Contagem</button>
+    </div>
+
+    <!-- Exercício 3: Validação de Formulário -->
+    <div class="exercicio">
+        <h2>Validação de Formulário</h2>
+        <form id="formLogin" onsubmit="validarFormulario(event)">
+            <label for="usuario">Usuário:</label>
+            <input type="text" id="usuario" name="usuario">
+            <br><br>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha">
+            <br><br>
+            <button type="submit" class="button">Entrar</button>
+        </form>
+        <div id="feedback" class="validacao"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

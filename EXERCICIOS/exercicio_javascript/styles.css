@@ -1,0 +1,77 @@
+/* Resetando margens e paddings para evitar inconsistências */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Cor neutra de fundo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container principal */
+.exercicio {
+    margin: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: red; /* Cor vermelha */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+#contador {
+    font-size: 3rem;
+    font-weight: bold;
+    color: orange;
+}
+
+.validacao {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.sucesso {
+    color: green;
+}
+
+.erro {
+    color: red;
+}
+
+/* Estilo de inputs */
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .exercicio {
+        width: 90%;
+    }
+}

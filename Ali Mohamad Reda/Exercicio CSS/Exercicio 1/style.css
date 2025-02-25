@@ -1,0 +1,27 @@
+body {
+    background-color: #a2c9d4;
+    font-family: Arial, sans-serif;
+    margin: 25px;
+}
+
+input,
+textarea {
+    background-color: #c8e6f3;
+    color: #000000;
+    border: none;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+label,
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+button {
+    background-color: #fd7676;
+    color: #fafafa;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+}

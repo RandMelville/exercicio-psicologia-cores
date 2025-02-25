@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #F5F5F5;
+    margin: 50px;
+}
+#text {
+    font-size: 24px;
+    color: black;
+    margin-top: 20px;
+}
+.changed {
+    color: green;
+}
+button {
+    background-color: orange;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: darkorange;
+}

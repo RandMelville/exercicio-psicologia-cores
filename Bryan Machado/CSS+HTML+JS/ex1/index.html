@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juntos</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+</head>
+<body>
+    <div class="cont">
+        <h2>Lista de Tarefas</h2>
+        <input type="text" id="colocando" placeholder="Adicione uma tarefa...">
+        <button onclick="colocandos()">Adicionar Tarefa</button>
+        <ul id="lista"></ul>
+    </div>
+</body>
+<script>
+    function colocandos() {
+        let colocando = document.getElementById("colocando");
+        let lista = document.getElementById("lista");
+        let texto = colocando.value.trim();
+        
+        if (texto === "") {
+            alert("Por favor, insira uma tarefa.");
+            return;
+        }
+        let li = document.createElement("li");
+        li.innerText = texto;     
+        if (texto.toLowerCase().includes("importante")) {
+            li.classList.add("important");
+        }
+        
+        lista.appendChild(li);
+        colocando.value = "";
+    }
+</script>
+</html> 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+    <h1>Contagem Regressiva</h1>
+    <div id="contagem">10</div>
+    <button onclick="conta()">Iniciar Contagem</button>
+    <script>
+        function conta() {
+               let cont = 10;
+               let countdownElement = document.getElementById("contagem");
+               
+               let interval = setInterval(function() {
+                   if (cont >= 0) {   
+                       countdownElement.innerText = cont;
+                       cont--;
+                   } else {
+                       clearInterval(interval);
+                       countdownElement.innerText = "Tempo acabou!";
+                       countdownElement.style.color = "blue";
+                   }
+               }, 1000);
+           }
+   </script>
+</body>
+</html>

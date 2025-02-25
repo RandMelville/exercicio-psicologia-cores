@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #E3F2FD;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+form input{
+    margin-bottom:  1.5em;
+    padding-left:2em;
+    background-color: #A5D6A7;
+}
+form textarea{
+    margin-bottom: 1.5em;
+}
+.en{
+    background-color: #A5D6A7;
+}
+form button{
+background-color: #FF7043;
+}

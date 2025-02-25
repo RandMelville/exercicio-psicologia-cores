@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+    <title>EX2</title>
+</head>
+<body>
+    <h1>Mudar Cor ao Clicar</h1>
+    <p id="text">Clique no botão para mudar minha cor!</p>
+    <button onclick="changeTextColor()">Mudar Cor</button>
+</body>
+<script>
+        function changeTextColor() {
+            let textElement = document.getElementById("text");
+            textElement.classList.toggle("changed");
+        }
+    </script>
+</html>     

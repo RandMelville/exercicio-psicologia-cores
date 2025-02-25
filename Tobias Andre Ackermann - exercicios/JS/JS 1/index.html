@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <title>Alterando</title>
+</head>
+<body>
+    <section>
+    <h1 id="bot">Botão</h1>
+    <button onclick="mudando()" type="submit">Clique e Passe Para A Próxima Página</button>
+</section>
+<script>
+
+    function mudando() {
+            let title = document.getElementById("bot");
+            title.innerText = "Deu Certo";
+            title.style.color = "green";
+}
+
+</script>
+</body>
+</html> 

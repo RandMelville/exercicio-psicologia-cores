@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    background-color: rgb(0, 140, 255);
+    padding: 0 2.5em 0 2.5em;
+    font-size: 2em;
+
+}
+section{
+    padding: 5em;
+    text-align: center;
+}
+h1{
+    font-size: 15em;
+}

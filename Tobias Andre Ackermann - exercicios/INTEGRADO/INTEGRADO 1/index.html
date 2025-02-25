@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juntos</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+</head>
+<body>
+    <div class="container">
+        <h2>Lista de Tarefas</h2>
+        <input type="text" id="taskInput" placeholder="Adicione uma tarefa...">
+        <button onclick="addTask()">Adicionar Tarefa</button>
+        <ul id="taskList"></ul>
+    </div>
+</body>
+<script>
+    function addTask() {
+        let taskInput = document.getElementById("taskInput");
+        let taskList = document.getElementById("taskList");
+        let taskText = taskInput.value.trim();
+        
+        if (taskText === "") {
+            alert("Por favor, insira uma tarefa.");
+            return;
+        }
+        let li = document.createElement("li");
+        li.innerText = taskText;     
+        if (taskText.toLowerCase().includes("importante")) {
+            li.classList.add("important");
+        }
+        
+        taskList.appendChild(li);
+        taskInput.value = "";
+    }
+</script>
+</html>
